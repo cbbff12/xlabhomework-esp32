@@ -1,0 +1,265 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Users\Administrator\.espressif\python_env\idf5.5_py3.14_env\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=1 C:\Users\Administrator\Desktop\esp32\xlabhomework
+Traceback (most recent call last):
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 682, in parse_int
+    return int(v, 0)
+ValueError: invalid literal for int() with base 0: '1.8'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 227, in from_csv
+    res.append(PartitionDefinition.from_csv(line, line_no + 1))
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 459, in from_csv
+    res.size = res.parse_size(fields[4], res.type)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 538, in parse_size
+    return parse_int(strval)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 681, in parse_int
+    return parse_int(v[:-1], keywords) * multiplier
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 685, in parse_int
+    raise InputError('Invalid field value %s' % v)
+gen_esp32part.InputError: Invalid field value 1.8
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\parttool.py", line 411, in <module>
+    main()
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\parttool.py", line 380, in main
+    target = ParttoolTarget(**target_args)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\parttool.py", line 96, in __init__
+    partition_table, _ = gen.PartitionTable.from_file(f)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 208, in from_file
+    return cls.from_csv(str_data), False
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 229, in from_csv
+    raise InputError(
+gen_esp32part.InputError: Error at line 5: Invalid field value 1.8
+Please check extra_partition_subtypes.inc file in build/config directory
+Traceback (most recent call last):
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 682, in parse_int
+    return int(v, 0)
+ValueError: invalid literal for int() with base 0: '1.8'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 227, in from_csv
+    res.append(PartitionDefinition.from_csv(line, line_no + 1))
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 459, in from_csv
+    res.size = res.parse_size(fields[4], res.type)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 538, in parse_size
+    return parse_int(strval)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 681, in parse_int
+    return parse_int(v[:-1], keywords) * multiplier
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 685, in parse_int
+    raise InputError('Invalid field value %s' % v)
+gen_esp32part.InputError: Invalid field value 1.8
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\parttool.py", line 411, in <module>
+    main()
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\parttool.py", line 380, in main
+    target = ParttoolTarget(**target_args)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\parttool.py", line 96, in __init__
+    partition_table, _ = gen.PartitionTable.from_file(f)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 208, in from_file
+    return cls.from_csv(str_data), False
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 229, in from_csv
+    raise InputError(
+gen_esp32part.InputError: Error at line 5: Invalid field value 1.8
+Please check extra_partition_subtypes.inc file in build/config directory
+Traceback (most recent call last):
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 682, in parse_int
+    return int(v, 0)
+ValueError: invalid literal for int() with base 0: '1.8'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 227, in from_csv
+    res.append(PartitionDefinition.from_csv(line, line_no + 1))
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 459, in from_csv
+    res.size = res.parse_size(fields[4], res.type)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 538, in parse_size
+    return parse_int(strval)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 681, in parse_int
+    return parse_int(v[:-1], keywords) * multiplier
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 685, in parse_int
+    raise InputError('Invalid field value %s' % v)
+gen_esp32part.InputError: Invalid field value 1.8
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\parttool.py", line 411, in <module>
+    main()
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\parttool.py", line 380, in main
+    target = ParttoolTarget(**target_args)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\parttool.py", line 96, in __init__
+    partition_table, _ = gen.PartitionTable.from_file(f)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 208, in from_file
+    return cls.from_csv(str_data), False
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 229, in from_csv
+    raise InputError(
+gen_esp32part.InputError: Error at line 5: Invalid field value 1.8
+Please check extra_partition_subtypes.inc file in build/config directory
+Traceback (most recent call last):
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 682, in parse_int
+    return int(v, 0)
+ValueError: invalid literal for int() with base 0: '1.8'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 227, in from_csv
+    res.append(PartitionDefinition.from_csv(line, line_no + 1))
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 459, in from_csv
+    res.size = res.parse_size(fields[4], res.type)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 538, in parse_size
+    return parse_int(strval)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 681, in parse_int
+    return parse_int(v[:-1], keywords) * multiplier
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 685, in parse_int
+    raise InputError('Invalid field value %s' % v)
+gen_esp32part.InputError: Invalid field value 1.8
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\parttool.py", line 411, in <module>
+    main()
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\parttool.py", line 380, in main
+    target = ParttoolTarget(**target_args)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\parttool.py", line 96, in __init__
+    partition_table, _ = gen.PartitionTable.from_file(f)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 208, in from_file
+    return cls.from_csv(str_data), False
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 229, in from_csv
+    raise InputError(
+gen_esp32part.InputError: Error at line 5: Invalid field value 1.8
+Please check extra_partition_subtypes.inc file in build/config directory
+Traceback (most recent call last):
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 682, in parse_int
+    return int(v, 0)
+ValueError: invalid literal for int() with base 0: '1.8'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 227, in from_csv
+    res.append(PartitionDefinition.from_csv(line, line_no + 1))
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 459, in from_csv
+    res.size = res.parse_size(fields[4], res.type)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 538, in parse_size
+    return parse_int(strval)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 681, in parse_int
+    return parse_int(v[:-1], keywords) * multiplier
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 685, in parse_int
+    raise InputError('Invalid field value %s' % v)
+gen_esp32part.InputError: Invalid field value 1.8
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\parttool.py", line 411, in <module>
+    main()
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\parttool.py", line 380, in main
+    target = ParttoolTarget(**target_args)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\parttool.py", line 96, in __init__
+    partition_table, _ = gen.PartitionTable.from_file(f)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 208, in from_file
+    return cls.from_csv(str_data), False
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 229, in from_csv
+    raise InputError(
+gen_esp32part.InputError: Error at line 5: Invalid field value 1.8
+Please check extra_partition_subtypes.inc file in build/config directory
+Traceback (most recent call last):
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 682, in parse_int
+    return int(v, 0)
+ValueError: invalid literal for int() with base 0: '1.8'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 227, in from_csv
+    res.append(PartitionDefinition.from_csv(line, line_no + 1))
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 459, in from_csv
+    res.size = res.parse_size(fields[4], res.type)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 538, in parse_size
+    return parse_int(strval)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 681, in parse_int
+    return parse_int(v[:-1], keywords) * multiplier
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 685, in parse_int
+    raise InputError('Invalid field value %s' % v)
+gen_esp32part.InputError: Invalid field value 1.8
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\parttool.py", line 411, in <module>
+    main()
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\parttool.py", line 380, in main
+    target = ParttoolTarget(**target_args)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\parttool.py", line 96, in __init__
+    partition_table, _ = gen.PartitionTable.from_file(f)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 208, in from_file
+    return cls.from_csv(str_data), False
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 229, in from_csv
+    raise InputError(
+gen_esp32part.InputError: Error at line 5: Invalid field value 1.8
+Please check extra_partition_subtypes.inc file in build/config directory
+Traceback (most recent call last):
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 682, in parse_int
+    return int(v, 0)
+ValueError: invalid literal for int() with base 0: '1.8'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 227, in from_csv
+    res.append(PartitionDefinition.from_csv(line, line_no + 1))
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 459, in from_csv
+    res.size = res.parse_size(fields[4], res.type)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 538, in parse_size
+    return parse_int(strval)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 681, in parse_int
+    return parse_int(v[:-1], keywords) * multiplier
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 685, in parse_int
+    raise InputError('Invalid field value %s' % v)
+gen_esp32part.InputError: Invalid field value 1.8
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\parttool.py", line 411, in <module>
+    main()
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\parttool.py", line 380, in main
+    target = ParttoolTarget(**target_args)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\parttool.py", line 96, in __init__
+    partition_table, _ = gen.PartitionTable.from_file(f)
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 208, in from_file
+    return cls.from_csv(str_data), False
+  File "C:\esp\v5.5.4\esp-idf\components\partition_table\gen_esp32part.py", line 229, in from_csv
+    raise InputError(
+gen_esp32part.InputError: Error at line 5: Invalid field value 1.8
+Please check extra_partition_subtypes.inc file in build/config directory
+CMake Error at C:/esp/v5.5.4/esp-idf/tools/cmake/component.cmake:494 (add_library):
+  Cannot find source file:
+
+    C:/Users/Administrator/Desktop/esp32/xlabhomework/main/batch/A_1.c
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm
+  .ccm .cxxm .c++m .h .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90
+  .f95 .f03 .hip .ispc
+Call Stack (most recent call first):
+  main/CMakeLists.txt:7 (idf_component_register)
+
+
+CMake Error at C:/esp/v5.5.4/esp-idf/tools/cmake/component.cmake:494 (add_library):
+  No SOURCES given to target: __idf_main
+Call Stack (most recent call first):
+  main/CMakeLists.txt:7 (idf_component_register)
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
