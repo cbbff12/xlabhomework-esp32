@@ -4518,4 +4518,4 @@ void video_player_task(void *pvParameters) {
     }
 }
 //IMG2LCD选择数据水平，字节垂直
-//不要包含图像头数据，不要反序
+//不要包含图像头数据，要反序，要反色

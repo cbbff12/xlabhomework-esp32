@@ -66,7 +66,7 @@ void step_forward(void *pvParameters) {
     gpio_set_level(IN3_PIN, 0); gpio_set_level(IN4_PIN, 1);
     esp_rom_delay_us(STEP_DELAY_US);
 
-    
+    taskYIELD();
     }
     vTaskDelay(pdMS_TO_TICKS(10));
     printf("step_forward\n");
@@ -121,7 +121,7 @@ void step_backward(void *pvParameters) {
     gpio_set_level(IN3_PIN, 0); gpio_set_level(IN4_PIN, 0);
     esp_rom_delay_us(STEP_DELAY_US);
 
-    
+    taskYIELD();
     }
     vTaskDelay(pdMS_TO_TICKS(10));
     
